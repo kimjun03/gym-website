@@ -1,0 +1,527 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+.header{
+    position: fixed;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.header.sticky{
+    padding: 0.5rem 4rem;
+    background: #121212;
+
+}
+
+.header .logo{
+    font-weight: 700;
+    font-size: 2rem;
+    color: #36e926;
+}
+
+.header .fas{
+    margin-right: 15px;
+}
+
+#navbar ul{
+    padding: 0 15rem;
+    margin-top: 15px;
+    display: flex;
+    gap: 3.5rem;
+}
+
+#navbar ul li{
+    list-style: none;
+}
+
+#navbar ul li a{
+   font-weight: 300;
+   font-size: 0.9rem;
+   text-decoration: none;
+   padding: 6px 20px;
+   border: 1px solid transparent;
+   color: #EEEEEE;
+   letter-spacing: 1px;
+   transition: 0.5s ease;
+}
+
+#navbar ul li a:hover{
+    border: 1px solid #36e926;
+    transition: 0.5s ease;
+}
+
+#navbar ul:hover li a:not(:hover){
+    color: #EEEEEE;
+    opacity: 1;
+    filter: blur(1px);
+    transition: 0.3s ease;
+}
+
+/*.header.sticky .logo,
+.header.sticky #navbar ul li a{
+    color: #303841;
+}*/
+
+.image-background img{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    top: 0;
+    z-index: -1;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    top: 0;
+    z-index: -1;
+    background: #121212; 
+    opacity: 0.92;
+}
+
+.home-content{
+    position: relative;
+    width: 55%;
+    color: #EEEEEE;
+    padding: 19rem 4.5rem;
+    margin-bottom: 7.2%;
+}
+
+.content{
+    position: absolute;
+}
+
+.home-content .title{
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.home-content .description{
+    margin-top: 15px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.home-content .learn{
+    padding: 6px 20px;
+    border: 1px solid #36e926;
+    text-decoration: none;
+    color: #EEEEEE;
+    transition: 0.5s ease 100ms;
+}
+
+.home-content .learn:hover{
+    color: #303841;
+    background: #36e926;
+    border: 1px solid #303841;
+}
+
+.content-image img{
+    position: absolute;
+    width: 105%;
+    margin-top: -15%;
+    margin-left: 68%;
+    cursor: pointer;
+}
+
+#about-page{
+    width: 100%;
+    padding: 4.5rem 0;
+}
+
+.about-first{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: #31353a;
+    top: -15px;
+}
+
+.about-header .title{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 10em;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #B2B2B2;
+}
+
+.about-content{
+    position: relative;
+    display: flex;
+}
+
+.about-image img{
+    width: 200%;
+    margin-left: -65%;
+    margin-top: 15.5%;
+    cursor: pointer;
+}
+
+
+.about-text .description{
+    color: #EEEEEE;
+    width: 70%;
+    font-size: 1.1rem;
+    margin-top: 25%;
+    margin-left: 20%;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.about-text .read{
+    padding: 6px 20px;
+    border: 1px solid #EEEEEE;
+    text-decoration: none;
+    color: #EEEEEE;
+    transition: 0.5s ease 100ms;
+    margin-left: 20%;
+}
+
+.about-text .read:hover{
+    color: #303841;
+    background: #36e926;
+    border: 1px solid #31353a;
+}
+
+#about-page-2{
+    width: 100%;
+    padding: 0 5rem;
+    
+}
+
+.about-second{
+    width: 100%;
+    height: 85vh;
+    position: relative;
+    display: flex;
+    border-radius: 10px;
+}
+
+.content-2{
+    margin: 0 30px;
+}
+
+.content-2 h1{
+    position: absolute;
+    font-size: 4rem;
+    color: #303841;
+    font-weight: 700;
+}
+
+.content-2 p{
+    position: absolute;
+    font-size: 1rem;
+    color: #303841;
+    width: 38%;
+    margin-top: 7%;
+    letter-spacing: 0.5px;
+}
+
+.content-2 .description-2{
+    position: absolute;
+    font-size: 1rem;
+    color: #303841;
+    width: 38%;
+    margin-top: 28%;
+    letter-spacing: 0.5px;
+}
+.content-images{
+    display: flex;
+    margin-left: 50%;
+    margin-top: 3%;
+    
+}
+
+.content-images .image-first img{
+    width: 230%;
+    border-radius: 10px;
+    margin-left: -60%;
+}
+
+.content-images .image-second img{
+    width: 86%;
+    border-radius: 10px;
+    margin-left: 25%
+}
+
+#coach-page{
+    width: 100%;
+    padding: 4rem 0;
+    background: #303841;
+    height: 95vh;
+}
+
+.coach-text{
+    text-align: center;
+    height: 20vh;
+}
+
+.coach-text h3{
+    color: #36e926;
+}
+
+.coach-text .fas{
+    margin: 5px;
+    font-size: 20px;
+}
+
+.coach-text h1{
+    color: #EEEEEE;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.card-box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.card{
+    flex-basis: 20%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #EEEEEE;
+    position: relative;
+    transition: 0.5s ease-in-out 100ms;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: 0 7px 20px 0 #121212;
+}
+
+.card .images{
+    height: 85%;
+}
+
+.gradient{
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    bottom: 15%;
+    background: linear-gradient(rgba(0,0,0,0.5), #303841);
+    /*background: #B2B2B2;*/
+    opacity: 0;
+    transition: 0.5s 100ms;
+    cursor: pointer;
+}
+
+.card:hover .gradient{
+    opacity: 1;
+}
+
+.card-desc{
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.5s 100ms;
+}
+
+
+.card-desc h1{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #EEEEEE;
+}
+
+.card-desc h3{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #36e926;
+}
+
+.card:hover .card-desc{
+    opacity: 1;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+#price-page{
+    width: 100%;
+    height: 95vh;
+    background: #121212;
+    padding: 4rem 0;
+}
+
+.price-text{
+    text-align: center;
+}
+
+.price-text h1{
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #303841;
+    text-shadow: -2px 1px 1px #36e926;
+}
+
+.price-card{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 50%;
+}
+
+.card-price{
+    position: relative;
+    flex-basis: 50%;
+    margin: 20px;
+}
+
+.card-content{
+    position: absolute;
+    background: #303841;
+    border-radius: 15px;
+    margin: 8% 10%;
+    padding: 10rem 0;
+    color: #EEEEEE;
+}
+
+.card-content h1{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: -35%;
+    margin-bottom: 10px;
+}
+
+.card-content .description-1{
+    margin: 20px 20px;
+    margin-bottom: 10px;
+}
+
+.card-content .description-2{
+    margin: 20px 20px;
+    margin-bottom: 10px;
+}
+
+.card-content .description-3{
+    margin-left: 20px;
+}
+
+
+.card-content .fas{
+    font-size: 24px;
+    margin-right: 10px;
+    color: #36e926;
+}
+
+#contact-page{
+    width: 100%;
+    height: 90vh;
+    padding: 4rem 0;
+    background-color: #303841;
+}
+
+.contact-text{
+    text-align: center;
+}
+
+.contact-text h1{
+    font-size: 3rem;
+    font-weight: 800;
+    color: #121212;
+    text-shadow: -2px 1px #36e926;
+}
+
+.contact-content{
+    width: 90%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+}
+
+.contact-info{
+    color: #EEEEEE;
+}
+
+.contact-info h1{
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.contact-info h3{
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.contact-info .fas{
+    margin-right: 15px;
+    color: #36e926;
+}
+
+.address{
+    margin-bottom: 25px;
+}
+
+.phone-no{
+    margin-bottom: 25px;
+}
+
+.open-hour{
+    margin-bottom: 25px;
+}
+
+.location{
+    margin-right: 25%;
+} 
+
+.location img{
+    height: 90%;
+    width: 185%;
+    border-radius: 15px;
+}
+
+.media a .fa{
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #36e926;
+    color: #36e926;
+    line-height: 40px;
+    font-size: 20px;
+    transition: 0.5s ease-in-out 100ms;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.media a .fa:hover{
+    transform: translateY(-10px);
+    background: #36e926;
+    color: #121212;
+}
